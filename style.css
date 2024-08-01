@@ -1,0 +1,79 @@
+@import 'node_modules/modern-normalize/modern-normalize.css';
+
+@font-face {
+    font-family: 'League Spartan Variable';
+    src: url('LeagueSpartan-Black.woff2') format('woff2-variations');
+    font-weight: 200 900;
+  }
+
+body {
+    background-color: #fffefc;
+    font-family: Inter;
+    
+  }
+
+#accesibility{
+    background-color: #141419;
+    padding: 0.4rem;
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+}
+
+#accesibility button{
+    background-color: #fffefc;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border-style: none;
+    padding: 0.2rem;
+ }
+
+#accesibility img{
+   width: 0.8rem;
+}
+
+#navBar{
+    background-color: #fffefc;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: 'League Spartan Variable';
+}
+
+.navBarSide{
+    width: 50rem;
+    padding: 9rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+}
+
+#mucholapaLogoImg{
+    height: 20rem;
+}
+
+#navBar a{
+    text-decoration: none;
+    color: #353633;
+}
+
+#quizText{
+    background-color: #353633;
+    color: #fffefc;
+}
+
+#newsletterText{
+    background-color: #5C7315;
+    color: #fffefc;
+}
+
+#done{
+    background-color: #141419;
+    color: #fffefc;
+}
+
+#footer{
+    background-color: #141419;
+    color: #fffefc;
+}
