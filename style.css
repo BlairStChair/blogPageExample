@@ -1,15 +1,20 @@
 @import 'node_modules/modern-normalize/modern-normalize.css';
 
 @font-face {
-    font-family: 'League Spartan Variable';
-    src: url('LeagueSpartan-Black.woff2') format('woff2-variations');
+    font-family: 'League Spartan Black';
+    src: url('LeagueSpartan/WOFF2/LeagueSpartan-Black.woff2') format('woff2-variations');
+    font-weight: 200 900;
+  }
+
+  @font-face {
+    font-family: 'League Spartan Medium';
+    src: url('LeagueSpartan/WOFF2/LeagueSpartan-Medium.woff2') format('woff2-variations');
     font-weight: 200 900;
   }
 
 body {
     background-color: #fffefc;
-    font-family: Inter;
-    
+    min-height: 100vh;
   }
 
 #accesibility{
@@ -37,12 +42,14 @@ body {
     background-color: #fffefc;
     display: flex;
     justify-content: center;
+    margin: 1rem 0;
     font-size: 1.5rem;
-    font-family: 'League Spartan Variable';
+    font-family: 'League Spartan Black';
 }
 
 .navBarSide{
     width: 50rem;
+    height: 18rem;
     padding: 9rem 0;
     display: flex;
     justify-content: center;
@@ -50,7 +57,7 @@ body {
 }
 
 #mucholapaLogoImg{
-    height: 20rem;
+    height: 18rem;
 }
 
 #navBar a{
@@ -58,22 +65,136 @@ body {
     color: #353633;
 }
 
+#baner img{
+    width: 100%;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+#content{
+    margin: 5rem 0 7rem;
+    font-size: 1.5rem;
+    font-family: 'League Spartan Medium';
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+
+#content p{
+    width: 48rem;
+}
+
+#contentPhoto{
+    background-image: url(graphics/pitcherPlant.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; 
+}
+
+#quizInfo{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
 #quizText{
     background-color: #353633;
     color: #fffefc;
+    border-radius: 15px;
+    font-family: 'League Spartan Medium';
+    width: 56rem;
+    padding: 2rem;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+#quizText h2{
+    font-family: 'League Spartan Black';
+    letter-spacing: 0.05rem;
+    font-size: 28px;
+}
+
+#quizText p{
+    letter-spacing: 0.05rem;
+    font-size: 22px;
+}
+
+#quizImgButton button{
+    background-color: #5C7315;
+    color:#fffefc;
+    border-radius: 15px;
+    font-family: 'League Spartan Medium';
+    border-style: none;
+    padding: 1rem;
+    font-size: 22px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+#newsletterInfo{
+    display: flex;
+    justify-content: center;
+}
+
+#newsletterPanel{
+    background-color: #5C7315;
+    color: #fffefc;
+    display: flex;
+    gap: 2rem;
+    font-family: 'League Spartan Medium';
+    font-size: 22px;
+    border-radius: 15px;
+    width: 75rem;
+    padding: 2rem;
+    margin: 5rem 0 7rem;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
 #newsletterText{
-    background-color: #5C7315;
-    color: #fffefc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    letter-spacing: 0.03rem;
+    font-size: 26px;
+    text-align: center;
+}
+
+#newsletterForm{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#emailInput{
+    border-radius: 15px;
+    border-style: none;
+    padding: 0.5rem;
+    width: 19rem;
+    height: 2.5rem;
 }
 
 #done{
     background-color: #141419;
     color: #fffefc;
+    border-radius: 15px;
+    font-family: 'League Spartan Medium';
+    border-style: none;
+    padding: 0.5rem 1rem;
+    font-size: 22px;
 }
 
 #footer{
+    height: 5.2rem;
     background-color: #141419;
     color: #fffefc;
+    text-align: center;
+    font-family: 'League Spartan Medium';
+    font-size: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer a{
+    text-decoration: none;
+    color:#f1e7d2;
 }
