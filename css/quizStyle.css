@@ -1,0 +1,76 @@
+@import 'node_modules/modern-normalize/modern-normalize.css';
+
+@font-face {
+    font-family: 'League Spartan Black';
+    src: url('../LeagueSpartan/WOFF2/LeagueSpartan-Black.woff2') format('woff2-variations');
+    font-weight: 200 900;
+  }
+
+  @font-face {
+    font-family: 'League Spartan Medium';
+    src: url('../LeagueSpartan/WOFF2/LeagueSpartan-Medium.woff2') format('woff2-variations');
+    font-weight: 200 900;
+  }
+
+body{
+    background-image: url(../graphics/cd3429b5-6880-4755-aafd-d0611a04743f.png);
+    font-family: 'League Spartan Black';
+}
+
+#navBarModified{
+    background-color: #141419;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: 'League Spartan Black';
+}
+
+#navBarModified a{
+    text-decoration: none;
+    color: #fffefc;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#navBarModified a:hover{
+    color: #cfdda3;
+}
+
+#quizContainer{
+    height: 30rem;
+    background-color: #fffefc;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 4rem 20rem;
+    padding: 1rem 6rem;
+}
+
+#quizContainer h2{
+    letter-spacing: 0.02rem;
+    font-size: 42px;
+}
+
+#quizContainer p{
+    font-weight: 300;
+    font-size: 24px;
+    font-family: 'League Spartan Medium';
+}
+
+#startQuiz{
+    width: 20rem;
+    background-color: #5C7315;
+    color:#fffefc;
+    border-radius: 15px;
+    font-family: 'League Spartan Medium';
+    border-style: none;
+    padding: 1rem;
+    font-size: 22px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
