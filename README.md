@@ -8,3 +8,5 @@ You can find there some info about carnivorous plants.
 <a href="https://www.flaticon.com/free-icons/dark" title="dark icons">Dark icons created by adriansyah - Flaticon</a>
 
 <a href="https://www.flaticon.com/free-icons/font-size" title="font size icons">Font size icons created by Md Tanvirul Haque - Flaticon</a>
+
+Image by <a href="https://pixabay.com/users/hasogr-23048968/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6761846">Hanna Groß</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6761846">Pixabay</a>
