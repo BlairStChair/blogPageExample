@@ -12,17 +12,16 @@ const newsletterText = document.querySelector("#newsletterText");
 const newsletterForm = document.querySelector("#newsletterForm");
 const newsletterPanel = document.querySelector("#newsletterPanel");
 
+//newsletter
 function  validateEmail(){
     let emailValue = emailInput.value;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    
     if(emailRegex.test(emailValue) === true){
         return true;
     }else{
         return false;
     }
-      
 }
 
 done.addEventListener("click", () =>{
@@ -42,14 +41,12 @@ done.addEventListener("click", () =>{
 
         thankYouContainer.animate(
             [
-                // Kluczowe klatki (keyframes)
-                { opacity: 0 }, // Początkowa klatka: niewidoczny
-                { opacity: 1 }  // Końcowa klatka: całkowicie widoczny
+                { opacity: 0 }, 
+                { opacity: 1 }  
             ],
             {
-                // Opcje czasu (timing options)
-                duration: 2000,  // Czas trwania animacji w ms
-                fill: "forwards" // Zachowaj stan końcowy
+                duration: 2000,  
+                fill: "forwards" 
             }
         );
 

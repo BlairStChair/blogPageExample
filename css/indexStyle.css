@@ -232,8 +232,10 @@ body {
 }
 
 #thankYouContainer{
+    background-color: #353633;
     text-align: center;
     width: 75rem;
+    border-radius: 15px;
 }
 
 #footer{
