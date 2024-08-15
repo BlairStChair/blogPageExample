@@ -231,6 +231,11 @@ body {
     background-color:#232c09;
 }
 
+#thankYouContainer{
+    text-align: center;
+    width: 75rem;
+}
+
 #footer{
     height: 5.2rem;
     background-color: #141419;
@@ -246,9 +251,6 @@ body {
 #footer a{
     text-decoration: none;
     color:#f1e7d2;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
 }
 
 #footer a:hover{
