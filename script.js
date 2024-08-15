@@ -6,21 +6,36 @@ takeMeToQuizButton.addEventListener("click", () =>{
 });
 
 const emailInput = document.querySelector("#emailInput");
-let emailValue = emailInput.value;
+
 const done = document.querySelector("#done");
 const newsletterText = document.querySelector("#newsletterText");
 const newsletterForm = document.querySelector("#newsletterForm");
 
-done.addEventListener("click", () =>{
-    if (emailValue === '') {
+function  validateEmail(){
+    let emailValue = emailInput.value;
+    if(emailValue === ''){
         alert("You can't leave the field empty!");
-    } else {
+    }else{
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (emailRegex.test(emailValue) === true) {
-            alert("Nice");
-        } else {
-            alert("Wrong");
+        if(emailRegex.test(emailValue) === true){
+            return true
+        }else{
+            return false;
         }
     }
+}
+
+done.addEventListener("click", () =>{
+    
+    if(validateEmail() == true){
+        alert("Nice");
+        location.reload(); 
+    }
+    else{
+        alert("wrong");
+        location.reload();
+    }
 });
+
+
 
