@@ -80,18 +80,36 @@ body{
     background-color: #465810;
 }
 
+#questionsAnswers{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#divForAnswersDivs{
+    width: 100%; /* Zmienić szerokość na 100% */
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie poziome */
+    margin-bottom: 1.2rem;
+}
+
 ul{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center; /* Wyśrodkowanie poziome elementów wewnątrz listy */
     gap: 1rem;
+    padding: 0; /* Usuń domyślne wypełnienie */
+    margin: 0; /* Usuń domyślne marginesy */
 }
 
 .answersDivs{
     font-size: 24px;
     font-family: 'League Spartan Medium';
+    background-color: #f0ede9;
+    border-radius: 15px;
+    border-style: none;
+    padding: 1rem;
+    width: 50rem;
+    text-align: center;
 }
 
-.answersItems{
-    margin-right: 1rem;
-}

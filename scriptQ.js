@@ -31,22 +31,25 @@ startQuiz.addEventListener("click", () => {
     
     let firstQuestionAnswers = separateAnswer(0);
 
+    let divForAnswersDivs = document.createElement("div");
+        divForAnswersDivs.id = "divForAnswersDivs";
+        questionAnswers.appendChild(divForAnswersDivs);
+
+        divForAnswersDivs.appendChild(answersList);
+
     for(let i = 0; i < firstQuestionAnswers.length; i++){
+
+        
 
         let answersDivs = document.createElement("div");
         answersDivs.className = "answersDivs";
         answersList.appendChild(answersDivs);
 
-        let answersItems = document.createElement("input");
-        answersItems.type = 'radio';
-        answersItems.name = 'quizAnswer';  
-        answersItems.className = 'answersItems'
-        answersItems.value = readyAnswers[i];
+        
 
         let label = document.createElement("label");
         label.textContent = readyAnswers[i].trim();
     
-        answersDivs.appendChild(answersItems);
         answersDivs.appendChild(label);
     
         let br = document.createElement("br"); 
