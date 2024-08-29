@@ -79,3 +79,19 @@ body{
 #startQuiz:hover{
     background-color: #465810;
 }
+
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.answersDivs{
+    font-size: 24px;
+    font-family: 'League Spartan Medium';
+}
+
+.answersItems{
+    margin-right: 1rem;
+}
