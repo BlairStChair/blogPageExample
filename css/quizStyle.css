@@ -87,19 +87,19 @@ body{
 }
 
 #divForAnswersDivs{
-    width: 100%; /* Zmienić szerokość na 100% */
+    width: 100%; 
     display: flex;
-    justify-content: center; /* Wyśrodkowanie poziome */
+    justify-content: center; 
     margin-bottom: 1.2rem;
 }
 
 ul{
     display: flex;
     flex-direction: column;
-    align-items: center; /* Wyśrodkowanie poziome elementów wewnątrz listy */
+    align-items: center;
     gap: 1rem;
-    padding: 0; /* Usuń domyślne wypełnienie */
-    margin: 0; /* Usuń domyślne marginesy */
+    padding: 0; 
+    margin: 0; 
 }
 
 .answersDivs{
@@ -111,5 +111,12 @@ ul{
     padding: 1rem;
     width: 50rem;
     text-align: center;
+}
+
+.answersDivs:hover{
+    background-color: #e2dfdb;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
