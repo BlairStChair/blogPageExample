@@ -4,8 +4,17 @@ const quizHeader = document.querySelector("#quizHeader");
 const quizDesc = document.querySelector("#quizDesc");
 const quizBtnContainer = document.querySelector("#quizBtnContainer");
 
-let questionsArray = ["What type of location do you have available in your home?", "Do you prefer an easy-to-grow plant or something more challenging?"];
-let answerArray = ["Sunny; Sunny, but with diffused ligth; Shady", "Easy to grow; Challenging"];
+let questionsArray = ["What type of location do you have available in your home?", 
+                    "Do you prefer an easy-to-grow plant or something more challenging?",
+                    "What is the average lowest temperature in your house?",
+                    "How often are you able to water the plant?",
+                    "Can you provide the plant with the dormancy period? (from late autumn to early spring, the plant should be placed in a location with a temperature belowe 15°C and access to light - such as garage, basement or shed. This will allow the plant to grow vigorously)"];
+
+let answerArray = ["Sunny; Sunny, but with diffused ligth; Shady",
+                "Easy to grow; Challenging",
+                "< 15°C; > 15°C",
+                "Rarely; Moderately often; Very often",
+                "Yes; No"];
 
 let readyAnswers = [];
 
