@@ -76,11 +76,11 @@ startQuiz.addEventListener("click", () => {
         answersDivs.appendChild(br);
     }
 
-    quizBtnContainer.appendChild(previousQuestionBtn);
     quizBtnContainer.appendChild(nextQuestionBtn);
 });
 
 nextQuestionBtn.addEventListener("click", () =>{
+    if(questionNumber < 4){
     questionNumber++;
 
     question.textContent = questionsArray[questionNumber];
@@ -112,6 +112,17 @@ nextQuestionBtn.addEventListener("click", () =>{
     
         let br = document.createElement("br"); 
         answersDivs.appendChild(br);
+    }
+    quizBtnContainer.insertBefore(previousQuestionBtn, nextQuestionBtn);
+    }else{
+    question.remove();
+    divForAnswersDivs.remove();
+    previousQuestionBtn.remove();
+    nextQuestionBtn.remove();
+
+    let resultsHeading = document.createElement("h2");
+    resultsHeading.textContent = "Here are your results!";
+    questionName.appendChild(resultsHeading);
     }
 });
 
