@@ -126,3 +126,7 @@ ul{
     transition: all 0.3s;
 }
 
+.answersDivs:focus{
+    background-color: #cfdda3;
+}
+

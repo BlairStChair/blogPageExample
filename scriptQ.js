@@ -16,13 +16,13 @@ let answerArray = ["Sunny; Sunny, but with diffused ligth; Shady",
                 "Rarely; Moderately often; Very often",
                 "Yes; No"];
 
-let readyAnswers = [];
-
 let answersCount = [];
 
 let questionNumber = -1;
 
 //function to separate question's answers
+let readyAnswers = [];
+
 function separateAnswer(n){
     readyAnswers = answerArray[n].split(';');
     return readyAnswers;
@@ -40,6 +40,7 @@ let previousQuestionBtn = document.createElement("button");
 
 let question = document.createElement("h2");
 
+
 startQuiz.addEventListener("click", () => {
     questionNumber++;
 
@@ -54,7 +55,7 @@ startQuiz.addEventListener("click", () => {
     let answersList = document.createElement("ul");
     questionAnswers.appendChild(answersList);
     
-    let firstQuestionAnswers = separateAnswer(0);
+    let firstQuestionAnswers = separateAnswer(questionNumber);
 
     let divForAnswersDivs = document.createElement("div");
         divForAnswersDivs.id = "divForAnswersDivs";
@@ -63,8 +64,10 @@ startQuiz.addEventListener("click", () => {
         divForAnswersDivs.appendChild(answersList);
 
     for(let i = 0; i < firstQuestionAnswers.length; i++){
-        let answersDivs = document.createElement("div");
+        let answersDivs = document.createElement("button");
         answersDivs.className = "answersDivs";
+        answersDivs.id = "answer" + i;
+        answersDivs.value = firstQuestionAnswers[i];
         answersList.appendChild(answersDivs);
 
         let label = document.createElement("label");
@@ -74,13 +77,24 @@ startQuiz.addEventListener("click", () => {
     
         let br = document.createElement("br"); 
         answersDivs.appendChild(br);
+
+        answersDivs.addEventListener("click", () => {
+            answersCount[questionNumber] = answersDivs.value;
+            console.log(answersCount[questionNumber]);
+        });
     }
 
     quizBtnContainer.appendChild(nextQuestionBtn);
+
 });
 
+
+
 nextQuestionBtn.addEventListener("click", () =>{
-    console.log(readyAnswers);
+    if(answersCount[questionNumber] == null){
+        alert("You can't continue without choosing your answer!");
+        return;
+    }
 
     if(questionNumber < 4){
     questionNumber++;
@@ -94,6 +108,8 @@ nextQuestionBtn.addEventListener("click", () =>{
 
     let currentQuestionAnswers = separateAnswer(questionNumber);
 
+    let firstQuestionAnswers = separateAnswer(questionNumber);
+
     let answersList = document.createElement("ul");
     questionAnswers.appendChild(answersList);
 
@@ -103,8 +119,9 @@ nextQuestionBtn.addEventListener("click", () =>{
     divForAnswersDivs.appendChild(answersList);
 
     for (let i = 0; i < currentQuestionAnswers.length; i++) {
-        let answersDivs = document.createElement("div");
+        let answersDivs = document.createElement("button");
         answersDivs.className = "answersDivs";
+        answersDivs.value = firstQuestionAnswers[i];
         answersList.appendChild(answersDivs);
 
         let label = document.createElement("label");
@@ -114,6 +131,11 @@ nextQuestionBtn.addEventListener("click", () =>{
     
         let br = document.createElement("br"); 
         answersDivs.appendChild(br);
+
+        answersDivs.addEventListener("click", () => {
+            answersCount[questionNumber] = answersDivs.value;
+            console.log(answersCount[questionNumber]);
+        });
     }
     quizBtnContainer.insertBefore(previousQuestionBtn, nextQuestionBtn);
     }else{
@@ -125,11 +147,20 @@ nextQuestionBtn.addEventListener("click", () =>{
     let resultsHeading = document.createElement("h2");
     resultsHeading.textContent = "Here are your results!";
     questionName.appendChild(resultsHeading);
+
+    //test what is saved in answersCount array
+    answersCount.forEach(function(entry) {
+        console.log(entry);
+      });
     }
 });
 
 previousQuestionBtn.addEventListener("click", () => {
-    console.log(questionNumber);
+    if(answersCount[questionNumber] == null){
+        alert("You can't continue without choosing your answer!");
+        return;
+    }
+    
     if(questionNumber > 0){
     questionNumber--;
 
@@ -142,6 +173,8 @@ previousQuestionBtn.addEventListener("click", () => {
 
     let currentQuestionAnswers = separateAnswer(questionNumber);
 
+    let firstQuestionAnswers = separateAnswer(questionNumber);
+
     let answersList = document.createElement("ul");
     questionAnswers.appendChild(answersList);
 
@@ -151,8 +184,9 @@ previousQuestionBtn.addEventListener("click", () => {
     divForAnswersDivs.appendChild(answersList);
 
     for (let i = 0; i < currentQuestionAnswers.length; i++) {
-        let answersDivs = document.createElement("div");
+        let answersDivs = document.createElement("button");
         answersDivs.className = "answersDivs";
+        answersDivs.value = firstQuestionAnswers[i];
         answersList.appendChild(answersDivs);
 
         let label = document.createElement("label");
@@ -162,6 +196,11 @@ previousQuestionBtn.addEventListener("click", () => {
     
         let br = document.createElement("br"); 
         answersDivs.appendChild(br);
+
+        answersDivs.addEventListener("click", () => {
+            answersCount[questionNumber] = answersDivs.value;
+            console.log(answersCount[questionNumber]);
+        });
     }}else{
         location.reload();
     }
