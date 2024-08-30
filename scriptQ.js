@@ -80,6 +80,8 @@ startQuiz.addEventListener("click", () => {
 });
 
 nextQuestionBtn.addEventListener("click", () =>{
+    console.log(readyAnswers);
+
     if(questionNumber < 4){
     questionNumber++;
 
@@ -127,6 +129,8 @@ nextQuestionBtn.addEventListener("click", () =>{
 });
 
 previousQuestionBtn.addEventListener("click", () => {
+    console.log(questionNumber);
+    if(questionNumber > 0){
     questionNumber--;
 
     question.textContent = questionsArray[questionNumber];
@@ -158,5 +162,7 @@ previousQuestionBtn.addEventListener("click", () => {
     
         let br = document.createElement("br"); 
         answersDivs.appendChild(br);
+    }}else{
+        location.reload();
     }
 });
