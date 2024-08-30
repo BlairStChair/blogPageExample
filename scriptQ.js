@@ -34,6 +34,10 @@ let nextQuestionBtn = document.createElement("button");
     nextQuestionBtn.id = "startQuiz";
     nextQuestionBtn.textContent = "Next Question";
 
+let previousQuestionBtn = document.createElement("button");
+    previousQuestionBtn.id = "startQuiz";
+    previousQuestionBtn.textContent = "Previous Question"
+
 let question = document.createElement("h2");
 
 startQuiz.addEventListener("click", () => {
@@ -72,14 +76,47 @@ startQuiz.addEventListener("click", () => {
         answersDivs.appendChild(br);
     }
 
-    
+    quizBtnContainer.appendChild(previousQuestionBtn);
     quizBtnContainer.appendChild(nextQuestionBtn);
-
-    
 });
 
 nextQuestionBtn.addEventListener("click", () =>{
     questionNumber++;
+
+    question.textContent = questionsArray[questionNumber];
+    questionName.appendChild(question);
+
+    while (questionAnswers.firstChild) {
+        questionAnswers.removeChild(questionAnswers.firstChild);
+    }
+
+    let currentQuestionAnswers = separateAnswer(questionNumber);
+
+    let answersList = document.createElement("ul");
+    questionAnswers.appendChild(answersList);
+
+    let divForAnswersDivs = document.createElement("div");
+    divForAnswersDivs.id = "divForAnswersDivs";
+    questionAnswers.appendChild(divForAnswersDivs);
+    divForAnswersDivs.appendChild(answersList);
+
+    for (let i = 0; i < currentQuestionAnswers.length; i++) {
+        let answersDivs = document.createElement("div");
+        answersDivs.className = "answersDivs";
+        answersList.appendChild(answersDivs);
+
+        let label = document.createElement("label");
+        label.textContent = currentQuestionAnswers[i].trim();
+    
+        answersDivs.appendChild(label);
+    
+        let br = document.createElement("br"); 
+        answersDivs.appendChild(br);
+    }
+});
+
+previousQuestionBtn.addEventListener("click", () => {
+    questionNumber--;
 
     question.textContent = questionsArray[questionNumber];
     questionName.appendChild(question);

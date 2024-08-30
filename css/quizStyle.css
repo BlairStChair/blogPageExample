@@ -38,7 +38,7 @@ body{
 }
 
 #quizContainer{
-    height: 30rem;
+    height: 35rem;
     background-color: #fffefc;
     border-radius: 15px;
     display: flex;
@@ -74,6 +74,12 @@ body{
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
+}
+
+#quizBtnContainer{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
 #startQuiz:hover{
