@@ -3,6 +3,8 @@ Blog page made to practice some new CSS and HTML skills.
 
 You can find there some info about carnivorous plants.
 
+![image](https://github.com/user-attachments/assets/3c093099-ec23-4250-93a3-79d67cd13f3e)
+
 <a href="https://www.flaticon.com/free-icons/ui" title="ui icons">Ui icons created by Mayor Icons - Flaticon</a>
 
 <a href="https://www.flaticon.com/free-icons/dark" title="dark icons">Dark icons created by adriansyah - Flaticon</a>
