@@ -5,13 +5,13 @@ const quizDesc = document.querySelector("#quizDesc");
 const quizBtnContainer = document.querySelector("#quizBtnContainer");
 
 //question's and asnwer's arrays
-let questionsArray = ["What type of location do you have available in your home?", 
+const questionsArray = ["What type of location do you have available in your home?", 
                     "Do you prefer an easy-to-grow plant or something more challenging?",
                     "What is the average lowest temperature in your house?",
                     "How often are you able to water the plant?",
                     "Can you provide the plant with the dormancy period? (from late autumn to early spring, the plant should be placed in a location with a temperature below 15°C and access to light - such as garage, basement or shed. This will allow the plant to grow vigorously)"];
 
-let answerArray = ["Sunny;Sunny, but with diffused light;Shady",
+const answerArray = ["Sunny;Sunny, but with diffused light;Shady",
                 "Easy to grow;Challenging",
                 "<15°C;>15°C",
                 "Rarely;Moderately often;Very often",
@@ -19,52 +19,69 @@ let answerArray = ["Sunny;Sunny, but with diffused light;Shady",
 
 //arrays for comparing chosen answers to a plant
 //sundew
-let sundewAnswers1 = ["Sunny", "Easy to grow", ">15°C", "Very often", "Yes"];
-let sundewAnswers2 = ["Sunny", "Easy to grow", ">15°C", "Very often", "No"];
-let sundewAnswers3 = ["Sunny, but with diffused light", "Easy to grow", ">15°C", "Very often", "Yes"];
-let sundewAnswers4 = ["Sunny, but with diffused light", "Easy to grow", ">15°C", "Very often", "No"];
+const sundewAnswers1 = ["Sunny", "Easy to grow", ">15°C", "Very often", "Yes"];
+const sundewAnswers2 = ["Sunny", "Easy to grow", ">15°C", "Very often", "No"];
+const sundewAnswers3 = ["Sunny, but with diffused light", "Easy to grow", ">15°C", "Very often", "Yes"];
+const sundewAnswers4 = ["Sunny, but with diffused light", "Easy to grow", ">15°C", "Very often", "No"];
 
 //venus flytrap
-let venusFlytrapAnswers1 = ["Sunny", "Easy to grow", "<15°C", "Moderately often", "Yes"];
-let venusFlytrapAnswers2 = ["Sunny", "Easy to grow", "<15°C", "Moderately often", "No"];
-let venusFlytrapAnswers3 = ["Sunny", "Easy to grow", ">15°C", "Moderately often", "Yes"];
-let venusFlytrapAnswers4 = ["Sunny", "Easy to grow", ">15°C", "Moderately often", "No"];
-let venusFlytrapAnswers5 = ["Sunny, but with diffused light", "Easy to grow", "<15°C", "Moderately often", "Yes"];
-let venusFlytrapAnswers6 = ["Sunny, but with diffused light", "Easy to grow", "<15°C", "Moderately often", "No"];
-let venusFlytrapAnswers7 = ["Sunny, but with diffused light", "Easy to grow", ">15°C", "Moderately often", "Yes"];
-let venusFlytrapAnswers8 = ["Sunny, but with diffused light", "Easy to grow", ">15°C", "Moderately often", "No"];
+const venusFlytrapAnswers1 = ["Sunny", "Easy to grow", "<15°C", "Moderately often", "Yes"];
+const venusFlytrapAnswers2 = ["Sunny", "Easy to grow", "<15°C", "Moderately often", "No"];
+const venusFlytrapAnswers3 = ["Sunny", "Easy to grow", ">15°C", "Moderately often", "Yes"];
+const venusFlytrapAnswers4 = ["Sunny", "Easy to grow", ">15°C", "Moderately often", "No"];
+const venusFlytrapAnswers5 = ["Sunny, but with diffused light", "Easy to grow", "<15°C", "Moderately often", "Yes"];
+const venusFlytrapAnswers6 = ["Sunny, but with diffused light", "Easy to grow", "<15°C", "Moderately often", "No"];
+const venusFlytrapAnswers7 = ["Sunny, but with diffused light", "Easy to grow", ">15°C", "Moderately often", "Yes"];
+const venusFlytrapAnswers8 = ["Sunny, but with diffused light", "Easy to grow", ">15°C", "Moderately often", "No"];
 
 //trumpet pitcher
-let trumpetPitcherAnswers1 = ["Sunny", "Easy to grow", "<15°C", "Moderately often", "Yes"];
-let trumpetPitcherAnswers2 = ["Sunny", "Easy to grow", "<15°C", "Moderately often", "No"];
-let trumpetPitcherAnswers3 = ["Sunny", "Easy to grow", ">15°C", "Moderately often", "Yes"];
-let trumpetPitcherAnswers4 = ["Sunny", "Easy to grow", ">15°C", "Moderately often", "No"];
-let trumpetPitcherAnswers5 = ["Sunny, but with diffused light", "Easy to grow", "<15°C", "Moderately often", "Yes"];
-let trumpetPitcherAnswers6 = ["Sunny, but with diffused light", "Easy to grow", "<15°C", "Moderately often", "No"];
-let trumpetPitcherAnswers7 = ["Sunny, but with diffused light", "Easy to grow", ">15°C", "Moderately often", "Yes"];
-let trumpetPitcherAnswers8 = ["Sunny, but with diffused light", "Easy to grow", ">15°C", "Moderately often", "No"];
+const trumpetPitcherAnswers1 = ["Sunny", "Easy to grow", "<15°C", "Moderately often", "Yes"];
+const trumpetPitcherAnswers2 = ["Sunny", "Easy to grow", "<15°C", "Moderately often", "No"];
+const trumpetPitcherAnswers3 = ["Sunny", "Easy to grow", ">15°C", "Moderately often", "Yes"];
+const trumpetPitcherAnswers4 = ["Sunny", "Easy to grow", ">15°C", "Moderately often", "No"];
+const trumpetPitcherAnswers5 = ["Sunny, but with diffused light", "Easy to grow", "<15°C", "Moderately often", "Yes"];
+const trumpetPitcherAnswers6 = ["Sunny, but with diffused light", "Easy to grow", "<15°C", "Moderately often", "No"];
+const trumpetPitcherAnswers7 = ["Sunny, but with diffused light", "Easy to grow", ">15°C", "Moderately often", "Yes"];
+const trumpetPitcherAnswers8 = ["Sunny, but with diffused light", "Easy to grow", ">15°C", "Moderately often", "No"];
 
 //pitcher plant
-let pitcherPlantAnswers1 = ["Sunny, but with diffused light", "Easy to grow", ">15°C", "Moderately often", "Yes"];
-let pitcherPlantAnswers2 = ["Sunny, but with diffused light", "Easy to grow", ">15°C", "Moderately often", "No"];
+const pitcherPlantAnswers1 = ["Sunny, but with diffused light", "Easy to grow", ">15°C", "Moderately often", "Yes"];
+const pitcherPlantAnswers2 = ["Sunny, but with diffused light", "Easy to grow", ">15°C", "Moderately often", "No"];
 
 //pinguicula
-let pinguiculaAnswers = ["Sunny, but with diffused light", "Easy to grow", ">15°C", "Rarely", "Yes"];
+const pinguiculaAnswers = ["Sunny, but with diffused light", "Easy to grow", ">15°C", "Rarely", "Yes"];
 
 //cephalotus
-let cephalotusAnswers = ["Sunny, but with diffused light", "Challenging", ">15°C", "Moderately often", "Yes"];
+const cephalotusAnswers = ["Sunny, but with diffused light", "Challenging", ">15°C", "Moderately often", "Yes"];
 
 //darlingtonia
-let darlingtoniaAnswers1 = ["Sunny", "Easy to grow", ">15°C", "Moderately often", "Yes"];
-let darlingtoniaAnswers2 = ["Sunny, but with diffused light", "Easy to grow", ">15°C", "Moderately often", "Yes"];
+const darlingtoniaAnswers1 = ["Sunny", "Easy to grow", ">15°C", "Moderately often", "Yes"];
+const darlingtoniaAnswers2 = ["Sunny, but with diffused light", "Easy to grow", ">15°C", "Moderately often", "Yes"];
 
 //heliamphora
-let heliamphoraAnswers1 = ["Sunny", "Easy to grow", ">15°C", "Moderately often", "Yes"];
-let heliamphoraAnswers2 = ["Sunny, but with diffused light", "Easy to grow", ">15°C", "Moderately often", "Yes"];
+const heliamphoraAnswers1 = ["Sunny", "Easy to grow", ">15°C", "Moderately often", "Yes"];
+const heliamphoraAnswers2 = ["Sunny, but with diffused light", "Easy to grow", ">15°C", "Moderately often", "Yes"];
 
 //ultricularia
-let ultriculariaAnswers1 = ["Sunny, but with diffused light", "Easy to grow", ">15°C", "Moderately often", "Yes"];
-let ultriculariaAnswers2 = ["Sunny, but with diffused light", "Easy to grow", ">15°C", "Moderately often", "No"];
+const ultriculariaAnswers1 = ["Sunny, but with diffused light", "Easy to grow", ">15°C", "Moderately often", "Yes"];
+const ultriculariaAnswers2 = ["Sunny, but with diffused light", "Easy to grow", ">15°C", "Moderately often", "No"];
+
+//plant's photos
+
+const sundewPhoto = "graphics/sundew.jpg";
+
+//plant's descriptions
+
+const sundewDescription = `
+The Sundew is a captivating carnivorous plant known for its charming and efficient way of catching insects. Its leaves are adorned with glandular hairs that secrete a sticky, 
+glistening substance to attract and trap prey. Once an insect lands on the sticky surface, the Sundew’s leaves curl around it, allowing the plant to absorb nutrients from the trapped insect.
+For optimal care, place your Sundew in bright, indirect sunlight, such as a sunny windowsill or under a grow light. It thrives in temperatures between 20°C to 30°C (68°F to 86°F) during 
+the growing season, but can tolerate cooler conditions in winter as long as it doesn’t drop below 10°C (50°F). Keep the soil consistently moist with distilled or rainwater, and maintain 
+high humidity to support its health.
+Sundews naturally catch their own food, but if kept indoors where insects are scarce, occasional feeding with small insects or specialized plant food may be necessary. 
+Some Sundews also need a dormant period in winter, where they should be kept in cooler temperatures with reduced watering.
+Enjoy the unique beauty and fascinating predatory behavior of your Sundew, a remarkable plant that adds a touch of nature’s ingenuity to any space.
+`;
 
 
 let answersCount = [];
@@ -223,6 +240,16 @@ nextQuestionBtn.addEventListener("click", () =>{
     
     if (matchPlant([sundewAnswers1, sundewAnswers2, sundewAnswers3, sundewAnswers4])) {
         matchingPlants.push("Sundew");
+        plantPhoto.style.backgroundImage = "url(../graphics/sundew.jpg)";
+        plantPhoto.style.width = "15rem";
+        plantPhoto.style.height = "15rem";
+        plantPhoto.style.backgroundSize = "cover";
+        plantPhoto.style.borderRadius = "50%";
+        plantHeading.textContent = "Sundew";
+        plantDesc.textContent = sundewDescription;
+        questionAnswers.appendChild(plantPhoto);
+        questionAnswers.appendChild(plantHeading);
+        questionAnswers.appendChild(plantDesc);
     }
     
     if (matchPlant([venusFlytrapAnswers1, venusFlytrapAnswers2, venusFlytrapAnswers3, venusFlytrapAnswers4, venusFlytrapAnswers5, venusFlytrapAnswers6, venusFlytrapAnswers7, venusFlytrapAnswers8])) {
