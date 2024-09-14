@@ -83,6 +83,11 @@ Some Sundews also need a dormant period in winter, where they should be kept in 
 Enjoy the unique beauty and fascinating predatory behavior of your Sundew, a remarkable plant that adds a touch of nature’s ingenuity to any space.
 `;
 
+const venusFlytrapDescription = `The Venus Flytrap is a unique carnivorous plant that traps insects with its snap-closing leaves. It thrives in bright, direct sunlight and needs at least 4-6 hours 
+of it daily. Water only with distilled or rainwater to avoid mineral damage, keeping the soil moist with a well-draining mix like sphagnum moss. During winter, it enters dormancy, 
+so reduce watering and let it rest in cooler temperatures. Avoid feeding it manually as it captures enough insects on its own. Proper care will keep your Venus Flytrap healthy and active.`;
+
+const trumpetPitcherDescription = ``;
 
 let answersCount = [];
 
@@ -156,9 +161,20 @@ startQuiz.addEventListener("click", () => {
 
 });
 
-
-
 nextQuestionBtn.addEventListener("click", () =>{
+    if (answersCount[0] === "Shady") {
+        questionAnswers.remove();
+        question.textContent = "If you can't provide enough sunlight, you can't meet any carnivorous plant needs :<";
+        nextQuestionBtn.textContent = "Go to the beginning";
+        previousQuestionBtn.remove();
+        nextQuestionBtn.blur();
+        
+        nextQuestionBtn.addEventListener("click", () => {
+            location.reload();
+        });
+        return;
+    }
+
     if(answersCount[questionNumber] == null){
         alert("You can't continue without choosing your answer!");
         return;

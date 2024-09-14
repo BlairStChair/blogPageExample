@@ -86,6 +86,10 @@ body{
     background-color: #465810;
 }
 
+#startQuiz:focus{
+    background-color: #33410c;
+}
+
 #questionsAnswers{
     display: flex;
     justify-content: center;
