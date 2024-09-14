@@ -136,6 +136,14 @@ let previousQuestionBtn = document.createElement("button");
 
 let question = document.createElement("h2");
 
+let divForWholeResult = document.createElement("div");
+    divForWholeResult.id = "divForWholeResult";
+
+let divForResultText = document.createElement("div");
+    divForResultText.id = "divForResultText";
+
+let divForResultPhotos = document.createElement("div");
+    divForResultPhotos.id = "divForResultPhotos";
 
 startQuiz.addEventListener("click", () => {
     questionNumber++;
@@ -312,6 +320,7 @@ nextQuestionBtn.addEventListener("click", () =>{
     // Displaying results
     matchingPlants.forEach(plant => {
         let plantPhoto = document.createElement("div");
+        plantPhoto.id = "plantPhoto";
         plantPhoto.style.backgroundImage = `url(${plant.image})`;
         plantPhoto.style.width = "15rem";
         plantPhoto.style.height = "15rem";
@@ -324,27 +333,35 @@ nextQuestionBtn.addEventListener("click", () =>{
         let plantDesc = document.createElement("p");
         plantDesc.textContent = plant.description;
 
+        divForResultText.appendChild(plantHeading);
+        divForResultText.appendChild(plantDesc);
+
+        divForResultPhotos.appendChild(plantPhoto);
+
+        divForWholeResult.appendChild(divForResultPhotos);
+        divForWholeResult.appendChild(divForResultText);
+
+        questionAnswers.appendChild(divForWholeResult);
+
         quizContainer.appendChild(questionAnswers);
-
-        questionAnswers.appendChild(plantPhoto);
-        questionAnswers.appendChild(plantHeading);
-        questionAnswers.appendChild(plantDesc);
     });
-    
-    // Wyświetlanie wyników
-    if (matchingPlants.length > 0) {
-        console.log("Your matching plants are: " + matchingPlants.join(", "));
-    } else {
-        console.log("No matching plant found.");
-    }
-    
 
-    //test what is saved in answersCount array
-    answersCount.forEach(function(entry) {
-        console.log(entry);
-      });
-    console.log("User answers: ", answersCountString);
-    console.log("Sundew answers: ", sundewAnswers1.join(","));
+    if(matchingPlants.length == 0){
+        resultsHeading.textContent = "No matching plants";
+    }
+
+    let finalBtnContainer = document.createElement("div");
+    finalBtnContainer.id = "quizBtnContainer";
+    quizContainer.appendChild(finalBtnContainer);
+
+    let finalBtn = document.createElement("button");
+    finalBtn.id = "startQuiz";
+    finalBtn.textContent = "Retry the quiz!";
+    finalBtnContainer.appendChild(finalBtn);
+
+    finalBtn.addEventListener("click", () => {
+        location.reload();
+    });
     }
 });
 
