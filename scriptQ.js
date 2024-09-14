@@ -75,19 +75,45 @@ const sundewPhoto = "graphics/sundew.jpg";
 const sundewDescription = `
 The Sundew is a captivating carnivorous plant known for its charming and efficient way of catching insects. Its leaves are adorned with glandular hairs that secrete a sticky, 
 glistening substance to attract and trap prey. Once an insect lands on the sticky surface, the Sundew’s leaves curl around it, allowing the plant to absorb nutrients from the trapped insect.
-For optimal care, place your Sundew in bright, indirect sunlight, such as a sunny windowsill or under a grow light. It thrives in temperatures between 20°C to 30°C (68°F to 86°F) during 
+For optimal care, place your Sundew in bright, indirect sunlight, such as a sunny windowsill or under a grow light. It thrives in temperatures between 20°C to 30°C during 
 the growing season, but can tolerate cooler conditions in winter as long as it doesn’t drop below 10°C (50°F). Keep the soil consistently moist with distilled or rainwater, and maintain 
 high humidity to support its health.
 Sundews naturally catch their own food, but if kept indoors where insects are scarce, occasional feeding with small insects or specialized plant food may be necessary. 
 Some Sundews also need a dormant period in winter, where they should be kept in cooler temperatures with reduced watering.
-Enjoy the unique beauty and fascinating predatory behavior of your Sundew, a remarkable plant that adds a touch of nature’s ingenuity to any space.
 `;
 
 const venusFlytrapDescription = `The Venus Flytrap is a unique carnivorous plant that traps insects with its snap-closing leaves. It thrives in bright, direct sunlight and needs at least 4-6 hours 
 of it daily. Water only with distilled or rainwater to avoid mineral damage, keeping the soil moist with a well-draining mix like sphagnum moss. During winter, it enters dormancy, 
 so reduce watering and let it rest in cooler temperatures. Avoid feeding it manually as it captures enough insects on its own. Proper care will keep your Venus Flytrap healthy and active.`;
 
-const trumpetPitcherDescription = ``;
+const trumpetPitcherDescription = `The Trumpet Pitcher is a carnivorous plant with tall, tubular leaves that trap insects. It needs 6-8 hours of sunlight and grows best in acidic, 
+nutrient-poor soil like peat moss. Keep the soil moist using distilled or rainwater. Protect it from frost in winter, reducing watering during its dormancy period.`;
+
+const pitcherPlantDescription = `The Pitcher Plant is a tropical carnivorous plant with deep, cup-like leaves that trap insects. It thrives in bright, indirect sunlight and humid environments. 
+Use well-draining, nutrient-poor soil like a mix of sphagnum moss and perlite. Water with distilled or rainwater, keeping the soil moist but not waterlogged. Avoid cold drafts 
+and keep it in warm temperatures.`;
+
+const pinguiculaDescription = `The Pinguicula is a small carnivorous plant with sticky, fleshy leaves that trap insects. It prefers bright, indirect light and grows well in a mix of sand 
+and peat moss. Keep the soil lightly moist using distilled or rainwater, but avoid waterlogging. It thrives in moderate humidity and temperatures, and doesn't need frequent feeding—its leaves 
+will naturally catch small insects.`;
+
+const cephalotusDescription = `Cephalotus has small, cup-shaped pitchers that lure and trap insects. It thrives in bright, indirect light and prefers well-draining soil, 
+like a mix of sand and peat moss. Water with distilled or rainwater, keeping the soil moist but not soaked. It prefers cooler temperatures and moderate humidity. 
+Feeding isn’t necessary, as it catches insects on its own.`;
+
+const darlingtoniaDescription = `Darlingtonia is a striking carnivorous plant with tubular, cobra-like traps. It requires bright, indirect light and prefers 
+a cool environment with temperatures between 15-25°C. Keep the soil consistently moist with distilled or rainwater, and ensure it remains well-draining to avoid root rot. 
+Darlingtonia thrives in high humidity, making it ideal for terrariums or a humid room. Feed it occasionally with small insects, as its natural traps will attract and capture prey.`;
+
+const heliamphoraDescription = `Heliamphora, also known as the Sun Pitcher Plant, is a captivating carnivorous plant with tube-shaped traps that catch insects using nectar and digestive enzymes. 
+It thrives in bright, indirect light and prefers a warm environment with temperatures between 20-30°C. Keep the soil consistently moist with distilled or rainwater 
+and ensure good drainage to prevent root rot. High humidity is essential, so consider placing it in a terrarium or a room with high moisture. Feed it occasionally with small insects,
+and it will reward you with its unique and attractive traps.`;
+
+const ultriculariaDescription = `Utricularia is a fascinating carnivorous plant known for its tiny, bladder-like traps that capture and digest small aquatic creatures. 
+It thrives in bright, indirect light and requires a consistently moist environment, ideally with temperatures between 20-30°C. Use distilled or rainwater and keep the soil 
+or growing medium wet. High humidity is beneficial, so a terrarium or a humid environment is ideal. Utricularia is easy to care for, as it does not require regular feeding; 
+its traps will handle small insects on their own.`;
 
 let answersCount = [];
 
