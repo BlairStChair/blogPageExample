@@ -38,7 +38,7 @@ body{
 }
 
 #quizContainer{
-    height: 35rem;
+    min-height: 35rem;
     background-color: #fffefc;
     border-radius: 15px;
     display: flex;

@@ -1,3 +1,4 @@
+const quizContainer = document.querySelector("#quizContainer");
 const questionName = document.querySelector("#questionName");
 const questionAnswers = document.querySelector("#questionAnswers");
 const quizHeader = document.querySelector("#quizHeader");
@@ -65,10 +66,6 @@ const heliamphoraAnswers2 = ["Sunny, but with diffused light", "Easy to grow", "
 //ultricularia
 const ultriculariaAnswers1 = ["Sunny, but with diffused light", "Easy to grow", ">15°C", "Moderately often", "Yes"];
 const ultriculariaAnswers2 = ["Sunny, but with diffused light", "Easy to grow", ">15°C", "Moderately often", "No"];
-
-//plant's photos
-
-const sundewPhoto = "graphics/sundew.jpg";
 
 //plant's descriptions
 
@@ -149,9 +146,11 @@ startQuiz.addEventListener("click", () => {
 
     
     question.textContent = questionsArray[questionNumber];
+    
     questionName.appendChild(question);
 
     let answersList = document.createElement("ul");
+    
     questionAnswers.appendChild(answersList);
     
     let firstQuestionAnswers = separateAnswer(questionNumber);
@@ -185,6 +184,9 @@ startQuiz.addEventListener("click", () => {
 
     quizBtnContainer.appendChild(nextQuestionBtn);
 
+    quizContainer.appendChild(questionName);
+    quizContainer.appendChild(questionAnswers);
+    quizContainer.appendChild(quizBtnContainer);
 });
 
 nextQuestionBtn.addEventListener("click", () =>{
@@ -258,73 +260,76 @@ nextQuestionBtn.addEventListener("click", () =>{
     let resultsHeading = document.createElement("h2");
     resultsHeading.textContent = "Here are your results!";
     questionName.appendChild(resultsHeading);
-
-    let plantPhoto = document.createElement("div");
-    plantPhoto.id = "plantPhoto";
-
-    let plantHeading = document.createElement("h2");
-    plantHeading.id = "plantHeading";
-
-    let plantDesc = document.createElement("p");
-    plantDesc.id = "plantDesc";
+    quizContainer.appendChild(questionName);
 
     let answersCountString = answersCount.join(",");
 
-    //function to compare answers with possible plant matches
+    // Function to compare answers with possible plant matches
     function matchPlant(plantAnswers) {
         return plantAnswers.some(answers => answersCountString === answers.join(","));
     }
 
-    //array that's storing plants which are matching with user's answers
+    // Array to store plants which are matching with user's answers
     let matchingPlants = [];
 
-    //getting the results
-    
+    // Getting the results
     if (matchPlant([sundewAnswers1, sundewAnswers2, sundewAnswers3, sundewAnswers4])) {
-        matchingPlants.push("Sundew");
-        plantPhoto.style.backgroundImage = "url(../graphics/sundew.jpg)";
+        matchingPlants.push({name: "Sundew", image: "../graphics/sundew.jpg", description: sundewDescription});
+    }
+
+    if (matchPlant([venusFlytrapAnswers1, venusFlytrapAnswers2, venusFlytrapAnswers3, venusFlytrapAnswers4, venusFlytrapAnswers5, venusFlytrapAnswers6, venusFlytrapAnswers7, venusFlytrapAnswers8])) {
+        matchingPlants.push({name: "Venus Flytrap", image: "../graphics/venusflytrap.jpg", description: venusFlytrapDescription});
+    }
+
+    if (matchPlant([trumpetPitcherAnswers1, trumpetPitcherAnswers2, trumpetPitcherAnswers3, trumpetPitcherAnswers4, trumpetPitcherAnswers5, trumpetPitcherAnswers6, trumpetPitcherAnswers7, trumpetPitcherAnswers8])) {
+        matchingPlants.push({name: "Trumpet Pitcher", image: "../graphics/trumpetpitcher.jpg", description: trumpetPitcherDescription});
+    }
+
+    if (matchPlant([pitcherPlantAnswers1, pitcherPlantAnswers2])) {
+        matchingPlants.push({name: "Pitcher Plant", image: "../graphics/pitcherPlant.jpg", description: pitcherPlantDescription});
+    }
+
+    if (matchPlant([pinguiculaAnswers])) {
+        matchingPlants.push({name: "Pinguicula", image: "../graphics/pinguicula.jpg", description: pinguiculaDescription});
+    }
+
+    if (matchPlant([cephalotusAnswers])) {
+        matchingPlants.push({name: "Cephalotus", image: "../graphics/cephalotus.jpg", description: cephalotusDescription});
+    }
+
+    if (matchPlant([darlingtoniaAnswers1, darlingtoniaAnswers2])) {
+        matchingPlants.push({name: "Darlingtonia", image: "../graphics/darlingtonia.jpg", description: darlingtoniaDescription});
+    }
+
+    if (matchPlant([heliamphoraAnswers1, heliamphoraAnswers2])) {
+        matchingPlants.push({name: "Heliamphora", image: "../graphics/heliamphora.jpg", description: heliamphoraDescription});
+    }
+
+    if (matchPlant([ultriculariaAnswers1, ultriculariaAnswers2])) {
+        matchingPlants.push({name: "Ultricularia", image: "../graphics/ultricularia.jpg", description: ultriculariaDescription});
+    }
+
+    // Displaying results
+    matchingPlants.forEach(plant => {
+        let plantPhoto = document.createElement("div");
+        plantPhoto.style.backgroundImage = `url(${plant.image})`;
         plantPhoto.style.width = "15rem";
         plantPhoto.style.height = "15rem";
         plantPhoto.style.backgroundSize = "cover";
         plantPhoto.style.borderRadius = "50%";
-        plantHeading.textContent = "Sundew";
-        plantDesc.textContent = sundewDescription;
+    
+        let plantHeading = document.createElement("h2");
+        plantHeading.textContent = plant.name;
+
+        let plantDesc = document.createElement("p");
+        plantDesc.textContent = plant.description;
+
+        quizContainer.appendChild(questionAnswers);
+
         questionAnswers.appendChild(plantPhoto);
         questionAnswers.appendChild(plantHeading);
         questionAnswers.appendChild(plantDesc);
-    }
-    
-    if (matchPlant([venusFlytrapAnswers1, venusFlytrapAnswers2, venusFlytrapAnswers3, venusFlytrapAnswers4, venusFlytrapAnswers5, venusFlytrapAnswers6, venusFlytrapAnswers7, venusFlytrapAnswers8])) {
-        matchingPlants.push("Venus Flytrap");
-    }
-    
-    if (matchPlant([trumpetPitcherAnswers1, trumpetPitcherAnswers2, trumpetPitcherAnswers3, trumpetPitcherAnswers4, trumpetPitcherAnswers5, trumpetPitcherAnswers6, trumpetPitcherAnswers7, trumpetPitcherAnswers8])) {
-        matchingPlants.push("Trumpet Pitcher");
-    }
-    
-    if (matchPlant([pitcherPlantAnswers1, pitcherPlantAnswers2])) {
-        matchingPlants.push("Pitcher Plant");
-    }
-    
-    if (matchPlant([pinguiculaAnswers])) {
-        matchingPlants.push("Pinguicula");
-    }
-    
-    if (matchPlant([cephalotusAnswers])) {
-        matchingPlants.push("Cephalotus");
-    }
-    
-    if (matchPlant([darlingtoniaAnswers1, darlingtoniaAnswers2])) {
-        matchingPlants.push("Darlingtonia");
-    }
-    
-    if (matchPlant([heliamphoraAnswers1, heliamphoraAnswers2])) {
-        matchingPlants.push("Heliamphora");
-    }
-    
-    if (matchPlant([ultriculariaAnswers1, ultriculariaAnswers2])) {
-        matchingPlants.push("Ultricularia");
-    }
+    });
     
     // Wyświetlanie wyników
     if (matchingPlants.length > 0) {
