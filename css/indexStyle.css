@@ -150,6 +150,17 @@ body {
     font-size: 22px;
 }
 
+#quizPreview{
+    border-radius: 15px;
+    width: 16rem;
+}
+
+#quizImgButton{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 #quizImgButton button{
     background-color: #5C7315;
     color:#fffefc;
