@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'League Spartan Black';
+    src: url('../LeagueSpartan/WOFF2/LeagueSpartan-Black.woff2') format('woff2-variations');
+    font-weight: 200 900;
+  }
+
+  @font-face {
+    font-family: 'League Spartan Medium';
+    src: url('../LeagueSpartan/WOFF2/LeagueSpartan-Medium.woff2') format('woff2-variations');
+    font-weight: 200 900;
+  }
+
+.animate {
+    animation-duration: 0.5s;
+    animation-name: animate-fade;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+}
+  
+@keyframes animate-fade {
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}  
+
+body {
+    background-color: #fffefc;
+    min-height: 100vh;
+  }
+
+#accesibility{
+    background-color: #141419;
+    padding: 0.4rem;
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+}
+
+#accesibility button{
+    background-color: #fffefc;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border-style: none;
+    padding: 0.2rem;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+ }
+
+ #accesibility button:hover{
+    background-color: #cfdda3;
+ }
+
+
+#accesibility img{
+   width: 0.8rem;
+}
+
+#navBar{
+    background-color: #fffefc;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 1rem;
+    font-size: 1.5rem;
+    font-family: 'League Spartan Black';
+}
+
+.navBarSide{
+    width: 50rem;
+    height: 18rem;
+    padding: 9rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+}
+
+#mucholapaLogoImg{
+    height: 18rem;
+}
+
+#navBar a{
+    text-decoration: none;
+    color: #353633;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#navBar a:hover{
+    color: #353633d2;
+}
+
+#baner{
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+}
+
+#baner img{
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+#question p{
+    display: flex;
+    justify-content: center;
+    font-family: 'League Spartan Black';
+    letter-spacing: 0.02rem;
+    font-size: 42px;
+}
