@@ -43,6 +43,6 @@ Plants photos from all posts:
 
 Sundew:
 
-<a href="https://pixabay.com/pl/users/seangentle-1360153/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=917114"> Sean Gentle</a> z <a href="https://pixabay.com/pl//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=917114"> Pixabay</a>
+Image by <a href="https://pixabay.com/pl/users/seangentle-1360153/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=917114"> Sean Gentle</a> z <a href="https://pixabay.com/pl//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=917114"> Pixabay</a>
 
-Obraz <a href="https://pixabay.com/pl/users/nidan-455298/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1045495"> Heiko Stein</a> z <a href="https://pixabay.com/pl//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1045495"> Pixabay</a>
+Image by <a href="https://pixabay.com/pl/users/nidan-455298/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1045495"> Heiko Stein</a> z <a href="https://pixabay.com/pl//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1045495"> Pixabay</a>
