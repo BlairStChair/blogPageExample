@@ -39,4 +39,10 @@ Sundew - Image by <a href="https://pixabay.com/users/hans-2/?utm_source=link-att
 
 Venus Flytrap - Image by <a href="https://pixabay.com/users/u_097p6cfs-15874306/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4998624">u_097p6cfs</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4998624">Pixabay</a>
 
+Plants photos from all posts:
 
+Sundew:
+
+<a href="https://pixabay.com/pl/users/seangentle-1360153/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=917114"> Sean Gentle</a> z <a href="https://pixabay.com/pl//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=917114"> Pixabay</a>
+
+Obraz <a href="https://pixabay.com/pl/users/nidan-455298/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1045495"> Heiko Stein</a> z <a href="https://pixabay.com/pl//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1045495"> Pixabay</a>
