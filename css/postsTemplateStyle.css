@@ -94,65 +94,76 @@ body {
     color: #353633d2;
 }
 
-#baner{
-    margin-top: 8rem;
-    display: flex;
-    justify-content: center;
-}
-
-#baner img{
-    width: 50%;
-    border-radius: 15px;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-}
-
-#question p{
+.mainContainer{
+    font-family: 'League Spartan Medium';
+    width: 100%;
     color: #141419;
     display: flex;
     justify-content: center;
+    margin: 8rem 0;
+}
+
+.mainContainer h1{
     font-family: 'League Spartan Black';
     letter-spacing: 0.02rem;
     font-size: 42px;
 }
 
-#linksContainer{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5rem;
+.mainContainer h3, p{
+    font-size: 26px;
 }
 
-#links{
-    width: 80%;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5rem;
-}
-
-.plantLink{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 40rem;
-    height: 12rem;
-    color: #fffefc;
-    text-align: center;
-    font-family: 'League Spartan Black';
-    font-size: 38px;
-    border-radius: 20px;
-    text-shadow: 0px 0px 20px #141419;
+#textContainer1{
+    padding: 2rem;
+    width: 45rem;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 20px 0px 0px 20px;
+    background-color: #f3f0ea;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-    transition: 0.3s ease;
 }
 
-.plantLink:hover{
-    text-shadow: 0 0 8px #fffefcbd, 0 0 16px #fffefcbd;
-    width: 42rem;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
+#imgContainer1{
+    width: 45rem;
+    background-image: url(../graphics/sundewP1.jpg);
+    background-size: cover;
+    border-style: solid;
+    border-width: 4px 4px 4px 0px;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
+#textContainer2{
+    padding: 2rem;
+    width: 45rem;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 0px 20px 20px 0px;
+    background-color: #f3f0ea;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+#imgContainer2{
+    width: 45rem;
+    background-image: url(../graphics/sundewP2.jpg);
+    background-size: cover;
+    background-position: 0 30rem;
+    border-style: solid;
+    border-width: 4px 0px 4px 4px;
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+#careTips{
+    width: 80rem;
+    padding: 2rem;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 20px;
+    font-size: 26px;
+    background-color: #f3f0ea;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
 
 #footer{
     height: 5.2rem;
