@@ -1,1 +1,10 @@
+#imgContainer1{
+    background-image: url(../../graphics/pinguicula.jpg);
+}
+
+#imgContainer2{
+    background-image: url(../../graphics/butterwortP1.jpg);
+    background-size: 150%;
+    background-position: 50rem 42rem;
+}
 
