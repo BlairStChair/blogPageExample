@@ -1,1 +1,8 @@
+#imgContainer1{
+    background-image: url(../../graphics/cephalotus.jpg);
+}
 
+#imgContainer2{
+    background-image: url(../../graphics/cephalotus.jpg);
+    background-position: 0 58rem;
+}
