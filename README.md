@@ -67,5 +67,9 @@ Image by <a href="https://pixabay.com/pl/users/sonja-kalee-10341199/?utm_source=
 
 Image by <a href="https://pixabay.com/pl/users/jamesdemers-3416/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=170604"> JamesDeMers</a> z <a href="https://pixabay.com/pl//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=170604"> Pixabay</a>
 
+Pitcher plant:
 
+Image by <a href="https://pixabay.com/pl/users/8k-702713/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=599856"> Adriel Kloppenburg</a> z <a href="https://pixabay.com/pl//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=599856"> Pixabay</a>
 
+Photo by <a href="https://unsplash.com/@howwei_mahoooo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Mahosadha Ong</a> on <a href="https://unsplash.com/photos/red-and-yellow-plant-D-Y9-opoyyY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
