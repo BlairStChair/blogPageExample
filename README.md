@@ -61,5 +61,11 @@ Image by <a href="https://pixabay.com/pl/users/u_097p6cfs-15874306/?utm_source=l
 
 Photo by <a href="https://unsplash.com/@age55?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">THitima</a> on <a href="https://unsplash.com/photos/a-close-up-of-a-plant-in-a-pot-YXPO_HAPxGk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
   
+Trumpet Pitcher:
+
+Image by <a href="https://pixabay.com/pl/users/sonja-kalee-10341199/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4788783"> Sonja Kalee</a> z <a href="https://pixabay.com/pl//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4788783"> Pixabay</a>
+
+Image by <a href="https://pixabay.com/pl/users/jamesdemers-3416/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=170604"> JamesDeMers</a> z <a href="https://pixabay.com/pl//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=170604"> Pixabay</a>
+
 
 
