@@ -1,0 +1,10 @@
+#imgContainer1{
+    background-image: url(../../graphics/venusFlytrapP1.jpg);
+    background-position: 0 35rem;
+}
+
+#imgContainer2{
+    background-image: url(../../graphics/venusFlytrapP2.jpg);
+    background-size: 150%;
+    background-position: 58rem 40rem;
+}
