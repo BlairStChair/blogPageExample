@@ -1,0 +1,9 @@
+#imgContainer1{
+    background-image: url(../../graphics/pitcherPlantP1.jpg);
+}
+
+#imgContainer2{
+    background-image: url(../../graphics/pitcherPlantP2.jpg);
+    background-size: 110%;
+    background-position: 0 0;
+}
