@@ -1,15 +1,15 @@
 # blogPageExample 🌿
-Blog page made to practice some new CSS and HTML skills.
+The blog page was made to practice my new CSS and HTML skills.
 
-You can find there some info about carnivorous plants.
+You can find some information about carnivorous plants there.
 
-I created quiz section that tells you, which carnivorous plant species would suit you, based on what conditions can be provided.
+I created a quiz section that tells you, which carnivorous plant species would suit you, based on what conditions can be provided.
 
-In posts section I decided to play a little with css and try making appealing post template. I also cared to make it functional, so it's a good reading experience.
+In the posts section, I decided to play a little with CSS and try making an appealing post template. I also made it functional,  so it's a good reading experience.
 
-Gallery section contain photos I took of my personal plant collection.
+The gallery section contains photos I took of my personal plant collection.
 
-About page explains the origin of name of the blog.
+The About page explains the origin of the name of the blog.
 
 ![image](https://github.com/user-attachments/assets/0936fbf8-d5ca-46e8-9ad1-81cb3a838e18)
 
