@@ -29,7 +29,7 @@
 }  
 
 body {
-    background-color: #fffefc;
+    background-color: #141419;
     min-height: 100vh;
   }
 
@@ -63,7 +63,7 @@ body {
 }
 
 #navBar{
-    background-color: #fffefc;
+    background-color: #141419;
     display: flex;
     justify-content: center;
     margin: 0 0 1rem;
@@ -86,17 +86,35 @@ body {
 
 #navBar a{
     text-decoration: none;
-    color: #353633;
+    color: #fffefc;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
 }
 
 #navBar a:hover{
-    color: #353633d2;
+    color: #fffefcb2;
 }
 
+#contentContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #141419;
+}
 
+#photoContainer{
+    margin: 8rem 0;
+    width: 80rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+}
+
+#photoContainer img{
+    width: 80rem;
+    margin-bottom: 5rem;
+}
 
 #footer{
     height: 5.2rem;
