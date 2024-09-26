@@ -3,6 +3,14 @@ Blog page made to practice some new CSS and HTML skills.
 
 You can find there some info about carnivorous plants.
 
+I created quiz section that tells you, which carnivorous plant species would suit you, based on what conditions can be provided.
+
+In posts section I decided to play a little with css and try making appealing post template. I also cared to make it functional, so it's a good reading experience.
+
+Gallery section contain photos I took of my personal plant collection.
+
+About us page explains the origin of name of the blog.
+
 ![image](https://github.com/user-attachments/assets/0936fbf8-d5ca-46e8-9ad1-81cb3a838e18)
 
 You can check it out here --> https://blairstchair.github.io/blogPageExample/
@@ -46,3 +54,26 @@ Sundew:
 Image by <a href="https://pixabay.com/pl/users/seangentle-1360153/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=917114"> Sean Gentle</a> z <a href="https://pixabay.com/pl//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=917114"> Pixabay</a>
 
 Image by <a href="https://pixabay.com/pl/users/nidan-455298/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1045495"> Heiko Stein</a> z <a href="https://pixabay.com/pl//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1045495"> Pixabay</a>
+
+Venus Flytrap:
+
+Image by <a href="https://pixabay.com/pl/users/u_097p6cfs-15874306/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4998624"> u_097p6cfs</a> z <a href="https://pixabay.com/pl//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4998624"> Pixabay</a>
+
+Photo by <a href="https://unsplash.com/@age55?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">THitima</a> on <a href="https://unsplash.com/photos/a-close-up-of-a-plant-in-a-pot-YXPO_HAPxGk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
+Trumpet Pitcher:
+
+Image by <a href="https://pixabay.com/pl/users/sonja-kalee-10341199/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4788783"> Sonja Kalee</a> z <a href="https://pixabay.com/pl//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4788783"> Pixabay</a>
+
+Image by <a href="https://pixabay.com/pl/users/jamesdemers-3416/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=170604"> JamesDeMers</a> z <a href="https://pixabay.com/pl//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=170604"> Pixabay</a>
+
+Pitcher plant:
+
+Image by <a href="https://pixabay.com/pl/users/8k-702713/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=599856"> Adriel Kloppenburg</a> z <a href="https://pixabay.com/pl//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=599856"> Pixabay</a>
+
+Photo by <a href="https://unsplash.com/@howwei_mahoooo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Mahosadha Ong</a> on <a href="https://unsplash.com/photos/red-and-yellow-plant-D-Y9-opoyyY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+Butterwort:
+
+Obraz <a href="https://pixabay.com/pl/users/andyboehnke-62318/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=190708"> Andy Böhnke</a> z <a href="https://pixabay.com/pl//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=190708"> Pixabay</a>
+
