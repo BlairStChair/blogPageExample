@@ -9,7 +9,7 @@ In posts section I decided to play a little with css and try making appealing po
 
 Gallery section contain photos I took of my personal plant collection.
 
-About us page explains the origin of name of the blog.
+About page explains the origin of name of the blog.
 
 ![image](https://github.com/user-attachments/assets/0936fbf8-d5ca-46e8-9ad1-81cb3a838e18)
 
