@@ -169,6 +169,30 @@ body {
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
+button{
+    width: 18rem;
+    height: 5rem;
+    background-color: #5C7315;
+    color:#fffefc;
+    border-radius: 20px;
+    font-family: 'League Spartan Medium';
+    border-style: none;
+    padding: 1rem;
+    font-size: 30px !important;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;  
+}
+
+button:hover{
+    background-color: #465810;
+}
+
+button:focus{
+    background-color: #33410c;
+}
+
 #footer{
     height: 5.2rem;
     background-color: #141419;
