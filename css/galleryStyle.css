@@ -95,3 +95,26 @@ body {
 #navBar a:hover{
     color: #353633d2;
 }
+
+
+
+#footer{
+    height: 5.2rem;
+    background-color: #141419;
+    color: #fffefc;
+    text-align: center;
+    font-family: 'League Spartan Medium';
+    font-size: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer a{
+    text-decoration: none;
+    color:#f1e7d2;
+}
+
+#footer a:hover{
+    color:#cfdda3;
+}
