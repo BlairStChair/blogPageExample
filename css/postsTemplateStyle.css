@@ -39,17 +39,18 @@ body {
     gap: 0.5rem;
 }
 
-#accesibility button{
+#accesibility button {
     background-color: #fffefc;
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 50%;
     border-style: none;
     padding: 0.2rem;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: all 0.3s;
- }
+}
 
  #accesibility button:hover{
     background-color: #cfdda3;
