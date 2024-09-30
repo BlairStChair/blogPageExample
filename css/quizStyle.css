@@ -37,6 +37,14 @@ body{
     color: #cfdda3;
 }
 
+#mucholapaLogoImg:hover{
+    height: 19rem;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 0px, rgba(255, 255, 255, 0.1) 0px 8px 24px, rgba(255, 255, 255, 0.1) 0px 16px 48px;
+}
+
 #quizContainer{
     min-height: 35rem;
     background-color: #fffefc;

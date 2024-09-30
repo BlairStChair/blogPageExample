@@ -5,6 +5,12 @@ const quizHeader = document.querySelector("#quizHeader");
 const quizDesc = document.querySelector("#quizDesc");
 const quizBtnContainer = document.querySelector("#quizBtnContainer");
 
+const takeMeToHomepageButton = document.querySelector("#mucholapaLogoImg");
+
+takeMeToHomepageButton.addEventListener("click", () =>{
+    location.href = '../index.html';
+});
+
 //question's and asnwer's arrays
 const questionsArray = ["What type of location do you have available in your home?", 
                     "Do you prefer an easy-to-grow plant or something more challenging?",

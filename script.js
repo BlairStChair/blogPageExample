@@ -5,6 +5,12 @@ takeMeToQuizButton.addEventListener("click", () =>{
     location.href = 'html/quiz.html';
 });
 
+const takeMeToHomepageButton = document.querySelector("#mucholapaLogoImg");
+
+takeMeToHomepageButton.addEventListener("click", () =>{
+    location.href = 'index.html';
+});
+
 const emailInput = document.querySelector("#emailInput");
 
 const done = document.querySelector("#done");
