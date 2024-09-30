@@ -63,7 +63,6 @@ body {
 }
 
 #navBar{
-    background-color: #fffefc;
     display: flex;
     justify-content: center;
     margin: 0 0 1rem;
