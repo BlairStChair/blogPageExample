@@ -11,6 +11,28 @@ takeMeToHomepageButton.addEventListener("click", () =>{
     location.href = '../index.html';
 });
 
+function darkModeOn(){
+    if (clickCounter % 2 == 1) {
+        quizContainer.style.backgroundColor = "#1a1a1a";
+        quizContainer.style.color = "#f3f3f2";
+        startQuiz.style.backgroundColor = "#a3b872";
+        const allAnswersDivs = document.querySelectorAll(".answersDivs");
+        allAnswersDivs.forEach(div => {
+            div.style.backgroundColor = "#303030";
+            div.style.color = "#f3f3f2";
+        });
+        const allStartQuiz = document.querySelectorAll("#startQuiz");
+        allStartQuiz.forEach(div => {
+            div.style.backgroundColor = "#a3b872";
+        });
+        
+    } else {
+        quizContainer.style.backgroundColor = "#fffefc";
+        quizContainer.style.color = "#141419";
+        startQuiz.style.backgroundColor = "#5C7315";
+    }
+}
+
 //question's and asnwer's arrays
 const questionsArray = ["What type of location do you have available in your home?", 
                     "Do you prefer an easy-to-grow plant or something more challenging?",
@@ -201,6 +223,8 @@ startQuiz.addEventListener("click", () => {
     quizContainer.appendChild(questionName);
     quizContainer.appendChild(questionAnswers);
     quizContainer.appendChild(quizBtnContainer);
+
+    darkModeOn();
 });
 
 nextQuestionBtn.addEventListener("click", () =>{
@@ -369,6 +393,8 @@ nextQuestionBtn.addEventListener("click", () =>{
         location.reload();
     });
     }
+
+    darkModeOn();
 });
 
 previousQuestionBtn.addEventListener("click", () => {
@@ -420,4 +446,18 @@ previousQuestionBtn.addEventListener("click", () => {
     }}else{
         location.reload();
     }
+
+    darkModeOn();
+});
+
+const darkMode = document.querySelector("#darkMode");
+
+let clickCounter = 0;
+
+darkMode.addEventListener("click", () => {
+    clickCounter++;
+
+    darkModeOn();
+
+    console.log(clickCounter);
 });
