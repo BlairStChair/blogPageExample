@@ -14,6 +14,10 @@ const quizTextp = document.querySelector("#quizTextp");
 const quizPreview = document.querySelector("#quizPreview");
 const takeMeToQuiz = document.querySelector("#takeMeToQuiz");
 const newsletterPanel = document.querySelector("#newsletterPanel");
+const emailInput = document.querySelector("#emailInput");
+const newsletterText = document.querySelector("#newsletterText");
+const done = document.querySelector("#done");
+const footer = document.querySelector("#footer");
 
 let clickCounterDM = 0;
 let clickCounterBF = 0;
@@ -64,6 +68,16 @@ biggerFont.addEventListener("click", () => {
         quizText.style.width = "60rem";
         quizTexth2.style.fontSize = "36px";
         quizTextp.style.fontSize = "30px"
+        quizPreview.style.width = "20rem";
+        takeMeToQuiz.style.fontSize = "26px";
+        newsletterPanel.style.width = "82rem";
+        newsletterText.style.fontSize = "30px";
+        emailInput.style.width = "22rem";
+        emailInput.style.height = "3.5rem";
+        emailInput.style.fontSize = "26px";
+        done.style.fontSize = "26px";
+        footer.style.height = "7rem";
+        footer.style.fontSize = "30px";
     } else {
         accesibilityImg.forEach(accesibilityImg => {
             accesibilityImg.style.width = "0.8rem"; 
@@ -83,6 +97,17 @@ biggerFont.addEventListener("click", () => {
         quizText.style.width = "56rem";
         quizTexth2.style.fontSize = "28px";
         quizTextp.style.fontSize = "22px"
+        quizPreview.style.width = "16rem";
+
+        takeMeToQuiz.style.fontSize = "22px";
+        newsletterPanel.style.width = "75rem";
+        newsletterText.style.fontSize = "26px";
+        emailInput.style.width = "19rem";
+        emailInput.style.height = "2.5rem";
+        emailInput.style.fontSize = "100%";
+        done.style.fontSize = "22px";
+        footer.style.height = "5.2rem";
+        footer.style.fontSize = "26px";
     }
 });
 
@@ -100,10 +125,6 @@ takeMeToHomepageButton.addEventListener("click", () =>{
     location.href = 'index.html';
 });
 
-const emailInput = document.querySelector("#emailInput");
-
-const done = document.querySelector("#done");
-const newsletterText = document.querySelector("#newsletterText");
 const newsletterForm = document.querySelector("#newsletterForm");
 
 //newsletter
